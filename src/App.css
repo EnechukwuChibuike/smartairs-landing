@@ -11,7 +11,7 @@
 }
 
 .subheader {
-  @apply bg-primaryBg text-white justify-center h-[10vh] w-screen text-xl flex items-center;
+  @apply bg-primaryBg text-white justify-center h-[10vh] w-full text-xl flex items-center;
 }
 
 .radio {

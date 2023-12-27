@@ -6,6 +6,7 @@ export default {
       colors: {
         primaryBg: "#106E63",
         gray: "#d1cccc",
+        dark: "#060606f2",
       },
       borderWidth: {
         one: "1px",
