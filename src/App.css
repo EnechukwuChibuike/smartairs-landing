@@ -1,0 +1,27 @@
+* {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.header {
+  @apply flex justify-between px-20 items-center h-[10vh] fixed w-screen shadow-md bg-white;
+}
+
+.nav {
+  @apply flex justify-between w-[40vw] items-center text-slate-700;
+}
+
+.subheader {
+  @apply bg-primaryBg text-white justify-center h-[10vh] w-screen text-xl flex items-center;
+}
+
+.radio {
+  border: 2px solid gray !important;
+  width: 15px !important;
+  height: 15px !important;
+  background-color: transparent !important;
+}
+
+.radio:checked {
+  background-color: blue !important;
+  border: 2px solid blue !important;
+}
