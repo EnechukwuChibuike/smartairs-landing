@@ -38,7 +38,7 @@ function App() {
     <div>
       <FormContext.Provider value={{ name, amount, id, tin }}>
         <Routes>
-          <Route path="/" element={<Main />}>
+          <Route path="/smartairs-landing" element={<Main />}>
             <Route index element={<SearchForBin />} />
             <Route path="generateinvoice" element={<GenerateInvoice />} />
             <Route path="validateinvoice" element={<ValidateInvoice />} />

@@ -5,16 +5,20 @@ export default function Header() {
   return (
     <header className="header">
       {/* Logo */}
-      <Link to="/">
+      <Link to="/smartairs-landing">
         <img src={Logo} alt="logo" width={50} />
       </Link>
 
       {/* Navigators */}
       <nav className="nav">
-        <NavLink to="/">Make Payment</NavLink>
-        <NavLink to="/generateinvoice">Generate Invoice</NavLink>
-        <NavLink to="/validateinvoice">Validate Invoice</NavLink>
-        <NavLink to="/generatetin">Generate TIN</NavLink>
+        <NavLink to="/smartairs-landing">Make Payment</NavLink>
+        <NavLink to="/smartairs-landing/generateinvoice">
+          Generate Invoice
+        </NavLink>
+        <NavLink to="/smartairs-landing/validateinvoice">
+          Validate Invoice
+        </NavLink>
+        <NavLink to="/smartairs-landing/generatetin">Generate TIN</NavLink>
       </nav>
     </header>
   );

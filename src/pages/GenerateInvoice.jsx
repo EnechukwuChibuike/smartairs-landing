@@ -7,7 +7,7 @@ export default function GenerateInvoice() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/confirminvoice");
+    navigate("/smartairs-landing/confirminvoice");
   };
   return (
     <>
@@ -15,7 +15,7 @@ export default function GenerateInvoice() {
       <section className="bg-[whitesmoke] min-h-[80vh] flex justify-center">
         <div>
           <div className="flex items-center space-x-1 mt-5">
-            <Link to="/" className=" text-black">
+            <Link to="/smartairs-landing" className=" text-black">
               Home
             </Link>
             <RiArrowRightSLine className="text-2xl text-black" />

@@ -9,7 +9,7 @@ export default function SearchForBin() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/makepayment");
+    navigate("/smartairs-landing/makepayment");
   };
 
   const hoverTrue = () => {
@@ -25,7 +25,7 @@ export default function SearchForBin() {
 
       <section className="bg-[whitesmoke] min-h-[80vh] flex justify-center">
         <div className="mt-5">
-          <Link to="/" className=" text-black">
+          <Link to="/smartairs-landing" className=" text-black">
             Home
           </Link>
           <div className="w-[80vw] mt-10 bg-white h-[30vh] flex justify-center items-center">
@@ -75,7 +75,7 @@ export default function SearchForBin() {
                 Don't have a BIN? {"  "}
                 <Link
                   className="text-[red] hover:underline"
-                  to="/generateinvoice"
+                  to="/smartairs-landing/generateinvoice"
                 >
                   Click here
                 </Link>
