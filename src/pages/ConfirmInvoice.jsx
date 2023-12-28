@@ -1,14 +1,9 @@
-import { createContext, useState } from "react";
 import SubHeader from "../components/SubHeader";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function ConfirmInvoice(props) {
   const navigate = useNavigate();
-
-  // const [name, setName] = useState("");
-  // const [amount, setAmount] = useState("");
-  // const [id, setID] = useState("JK-1047523");
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -35,9 +30,9 @@ export default function ConfirmInvoice(props) {
             <span className="text-primaryBg">Confirm Invoice</span>
           </div>
 
-          <div className="w-[80vw] mt-10 bg-white h-fit p-10 flex justify-center items-center">
-            <form className="grid gap-5 w-[50vw]">
-              <strong className="text-black border-b-2 w-full h-14 border-gray">
+          <div className="w-screen sm:w-[90vw] md:w-[80vw] mt-10 bg-white h-fit py-10 flex justify-center items-center">
+            <form className="grid gap-5 w-[90%] md:w-[50vw]">
+              <strong className="text-black border-b-2 w-full pb-2 border-gray">
                 You are An Individual, you are paying for _ROAD OFFENCES (SOFT
                 ALLIANCE) bill (BOARD OF INTERNAL REVENUE SERVICE). Kindly
                 confirm your invoice.
@@ -57,12 +52,12 @@ export default function ConfirmInvoice(props) {
 
               {/* Name and Email */}
 
-              <div className="flex w-full justify-between items-center">
+              <div className="flex flex-col md:flex-row w-full md:justify-between md:items-center">
                 <label className="text-black font-extrabold leading-10">
                   Full Name <br />
                   <input
                     type="text"
-                    className="font-light w-80 bg-[#F4F4F4] h-[50px] border-one border-gray pl-2 rounded-md"
+                    className="font-light w-full md:w-80 bg-[#F4F4F4] h-[50px] border-one border-gray pl-2 rounded-md"
                     value={props.value}
                     onChange={props.handleChange}
                   />
@@ -71,26 +66,26 @@ export default function ConfirmInvoice(props) {
                   Email <br />
                   <input
                     type="email"
-                    className="font-light w-80 bg-[#F4F4F4] h-[50px] border-one border-gray pl-2 rounded-md"
+                    className="font-light w-full md:w-80 bg-[#F4F4F4] h-[50px] border-one border-gray pl-2 rounded-md"
                   />
                 </label>
               </div>
 
               {/* Phone number & TIN */}
 
-              <div className="flex w-full justify-between items-center">
+              <div className="flex w-full flex-col md:flex-row md:justify-between md:items-center">
                 <label className="text-black font-extrabold leading-10">
                   Phone Number <br />
                   <input
                     type="number"
-                    className="font-light w-80 bg-[#F4F4F4] h-[50px] border-one border-gray pl-2 rounded-md"
+                    className="font-light w-full md:w-80 bg-[#F4F4F4] h-[50px] border-one border-gray pl-2 rounded-md"
                   />
                 </label>
                 <label className="text-black font-extrabold leading-10">
                   TIN <br />
                   <input
                     type="text"
-                    className="font-light w-80 bg-[#F4F4F4] h-[50px] border-one border-gray pl-2 rounded-md"
+                    className="font-light w-full md:w-80 bg-[#F4F4F4] h-[50px] border-one border-gray pl-2 rounded-md"
                     value={props.tin}
                     onChange={props.handleTIN}
                   />
@@ -118,7 +113,7 @@ export default function ConfirmInvoice(props) {
 
               {/* Amount to pay */}
 
-              <div className="w-full flex justify-between">
+              <div className="w-full flex flex-col md:flex-row md:justify-between">
                 <span className="font-medium text-[#222121]">
                   Amount to Pay
                 </span>
@@ -126,7 +121,7 @@ export default function ConfirmInvoice(props) {
                 <div className="grid gap-3">
                   <input
                     type="number"
-                    className="font-light w-80 bg-[#F4F4F4] h-[50px] border-one border-gray pl-2 rounded-md"
+                    className="font-light w-full md:w-80 bg-[#F4F4F4] h-[50px] border-one border-gray pl-2 rounded-md"
                     placeholder="Enter an amount"
                     value={props.amount}
                     onChange={props.handleAmount}
