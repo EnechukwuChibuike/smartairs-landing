@@ -43,8 +43,8 @@ export default function SearchForBin() {
                 </span>
                 {hover && (
                   <span className="flex items-center">
-                    <RiArrowLeftSFill className="text-3xl absolute text-black -ml-4" />
-                    <span className="absolute bg-black text-white w-64 h-fit p-5">
+                    <RiArrowLeftSFill className="text-3xl hidden sm:block absolute text-black -ml-4" />
+                    <span className="left-0 sm:left-auto absolute bg-black text-white w-64 h-fit p-5">
                       The Bank3D Invoice Number (BIN) is a unique number that is
                       systematically assigned to each invoice generated on the
                       instant revenue platform. <br /> <br /> This number

@@ -10,13 +10,13 @@ export default function Secondary() {
   };
 
   return (
-    <form className="p-5 grid gap-5 text-dark text-[14px] border-gray border-one w-[70%] font-mono">
+    <form className="p-5 grid gap-5 text-dark text-[14px] border-gray border-one w-full md:w-[70%] font-mono">
       <h1 className="text-xl text-[grey] col-span-2">
         Direct Financial Cost (License Fee)
       </h1>
 
       {/* Name */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Name <br />
         <input
           type="text"
@@ -25,7 +25,7 @@ export default function Secondary() {
       </label>
 
       {/* TIN */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         TIN <br />
         <input
           type="text"
@@ -34,7 +34,7 @@ export default function Secondary() {
       </label>
 
       {/* Rep.Type */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Rep.Type <br />
         <input
           type="text"
@@ -44,7 +44,7 @@ export default function Secondary() {
       </label>
 
       {/* Reason */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Reason <br />
         <input
           type="text"
@@ -58,7 +58,7 @@ export default function Secondary() {
       </h1>
 
       {/* state */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         State
         <select className="bg-transparent border-one border-gray w-full h-8">
           <option>Abia</option>
@@ -68,7 +68,7 @@ export default function Secondary() {
       </label>
 
       {/* LGA */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         LGA
         <select className="bg-transparent border-one border-gray w-full h-8">
           <option>Aba South</option>
@@ -78,7 +78,7 @@ export default function Secondary() {
       </label>
 
       {/* Ward */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Ward <br />
         <input
           type="text"
@@ -87,7 +87,7 @@ export default function Secondary() {
       </label>
 
       {/* CITY */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         City/Town/Area <br />
         <input
           type="text"
@@ -96,7 +96,7 @@ export default function Secondary() {
       </label>
 
       {/* Street name */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Street Name <br />
         <input
           type="text"
@@ -105,7 +105,7 @@ export default function Secondary() {
       </label>
 
       {/* house no. */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         House No. <br />
         <input
           type="text"
@@ -114,7 +114,7 @@ export default function Secondary() {
       </label>
 
       {/* phone no 1*/}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Phone No (1) <br />
         <input
           type="number"
@@ -123,7 +123,7 @@ export default function Secondary() {
       </label>
 
       {/* phone no 2*/}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Phone No (2) <br />
         <input
           type="number"
@@ -132,7 +132,7 @@ export default function Secondary() {
       </label>
 
       {/* Email */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Email <br />
         <input
           type="email"
@@ -200,7 +200,7 @@ export default function Secondary() {
       {selectedOption === "employee" && (
         <div className="grid gap-5">
           {/* Employer Name */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Employer Name <br />
             <input
               type="text"
@@ -209,7 +209,7 @@ export default function Secondary() {
           </label>
 
           {/* Employer TIN */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Employer TIN <br />
             <input
               type="text"
@@ -218,7 +218,7 @@ export default function Secondary() {
           </label>
 
           {/* Date of Employment */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Start Date Of Employment
             <br />
             <input
@@ -237,7 +237,7 @@ export default function Secondary() {
           </h1>
 
           {/* Name */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Name <br />
             <input
               type="text"
@@ -246,7 +246,7 @@ export default function Secondary() {
           </label>
 
           {/* Commencement Date */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Commencement Date <br />
             <input
               type="date"
@@ -255,7 +255,7 @@ export default function Secondary() {
           </label>
 
           {/* state */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             State
             <select className="bg-transparent border-one border-gray w-full h-8">
               <option>Abia</option>
@@ -265,7 +265,7 @@ export default function Secondary() {
           </label>
 
           {/* LGA */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             LGA
             <select className="bg-transparent border-one border-gray w-full h-8">
               <option>Aba South</option>
@@ -275,7 +275,7 @@ export default function Secondary() {
           </label>
 
           {/* Ward */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Ward <br />
             <input
               type="text"
@@ -284,7 +284,7 @@ export default function Secondary() {
           </label>
 
           {/* CITY */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             City/Town/Area <br />
             <input
               type="text"
@@ -293,7 +293,7 @@ export default function Secondary() {
           </label>
 
           {/* Street name */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Street Name <br />
             <input
               type="text"
@@ -302,7 +302,7 @@ export default function Secondary() {
           </label>
 
           {/* house no. */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             House No. <br />
             <input
               type="text"
@@ -311,7 +311,7 @@ export default function Secondary() {
           </label>
 
           {/* Sector */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Sector <br />
             <input
               type="text"
@@ -320,7 +320,7 @@ export default function Secondary() {
           </label>
 
           {/* Line of Business */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Line of Business <br />
             <input
               type="text"
@@ -329,7 +329,7 @@ export default function Secondary() {
           </label>
 
           {/* Number of employees */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Number of employees <br />
             <input
               type="number"
@@ -351,7 +351,7 @@ export default function Secondary() {
           </p>
 
           {/* Ownership Name */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Ownership Name <br />
             <input
               type="text"
@@ -360,7 +360,7 @@ export default function Secondary() {
           </label>
 
           {/* TIN */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             TIN <br />
             <input
               type="text"
@@ -369,7 +369,7 @@ export default function Secondary() {
           </label>
 
           {/* Shareholding */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Shareholding (%) <br />
             <input
               type="number"
@@ -378,7 +378,7 @@ export default function Secondary() {
           </label>
 
           {/* Date */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Date <br />
             <input
               type="date"
@@ -392,7 +392,7 @@ export default function Secondary() {
           </h1>
 
           {/* Type Of Asset */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Type Of Asset <br />
             <input
               type="text"
@@ -401,7 +401,7 @@ export default function Secondary() {
           </label>
 
           {/* LOcation Of Assets */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             LOcation Of Assets <br />
             <input
               type="text"
@@ -410,7 +410,7 @@ export default function Secondary() {
           </label>
 
           {/* Market Value */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Market Value (&#8358;) <br />
             <input
               type="number"
@@ -419,7 +419,7 @@ export default function Secondary() {
           </label>
 
           {/* Date */}
-          <label className="leading-8">
+          <label className="leading-8 col-span-2 sm:col-span-1">
             Date <br />
             <input
               type="date"
@@ -439,7 +439,7 @@ export default function Secondary() {
       </p>
 
       {/* Dep/Child SurName */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Dep/Child SurName <br />
         <input
           type="text"
@@ -448,7 +448,7 @@ export default function Secondary() {
       </label>
 
       {/* First Name */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         First Name <br />
         <input
           type="text"
@@ -457,7 +457,7 @@ export default function Secondary() {
       </label>
 
       {/* Middle Name */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Middle Name <br />
         <input
           type="text"
@@ -466,7 +466,7 @@ export default function Secondary() {
       </label>
 
       {/* State of Origin */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         State of Origin <br />
         <input
           type="text"
@@ -475,7 +475,7 @@ export default function Secondary() {
       </label>
 
       {/* DOB */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         DOB <br />
         <input
           type="date"
@@ -484,7 +484,7 @@ export default function Secondary() {
       </label>
 
       {/* TIN */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         TIN <br />
         <input
           type="text"
@@ -493,7 +493,7 @@ export default function Secondary() {
       </label>
 
       {/* Relationship Type */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Relationship Type <br />
         <input
           type="text"
@@ -504,7 +504,7 @@ export default function Secondary() {
       <h1 className="text-[grey] text-xl col-span-2">Spouse</h1>
 
       {/*  SurName */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         SurName <br />
         <input
           type="text"
@@ -513,7 +513,7 @@ export default function Secondary() {
       </label>
 
       {/* First Name */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         First Name <br />
         <input
           type="text"
@@ -522,7 +522,7 @@ export default function Secondary() {
       </label>
 
       {/* Middle Name */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Middle Name <br />
         <input
           type="text"
@@ -531,7 +531,7 @@ export default function Secondary() {
       </label>
 
       {/* Start Date */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Start Date <br />
         <input
           type="date"
@@ -540,7 +540,7 @@ export default function Secondary() {
       </label>
 
       {/* TIN */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         TIN <br />
         <input
           type="text"

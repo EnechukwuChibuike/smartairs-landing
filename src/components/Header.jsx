@@ -33,7 +33,7 @@ export default function Header() {
         className="py-1 px-2 border-one border-gray md:hidden"
         onClick={handleClick}
       >
-        <IoMenuOutline className=" text-3xl text-dark" />
+        <IoMenuOutline className="text-3xl text-dark" />
       </div>
     </header>
   );

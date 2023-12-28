@@ -34,15 +34,15 @@ export default function RegisterTin() {
             <span className="text-primaryBg">Register TIN</span>
           </div>
 
-          <div className="w-[80vw] mt-10 bg-white h-fit p-10 flex justify-center items-center">
-            <div className="grid gap-5 w-[70vw]">
-              <h1 className="text-3xl text-[grey]">
+          <div className="w-screen sm:w-[90vw] md:w-[80vw] mt-10 bg-white h-fit  py-10 flex justify-center items-center">
+            <div className="grid gap-5 w-[90%] md:w-[70vw]">
+              <h1 className="text-xl sm:text-3xl text-[grey]">
                 TAX IDENTIFICATION NUMBER REGISTRATION
               </h1>
 
-              <div className="flex justify-between">
+              <div className="flex flex-col gap-10 md:gap-0 md:flex-row md:justify-between">
                 {/* aside */}
-                <div className="border-one grid gap-5 text-[14px] border-gray p-5 h-fit w-[25%]">
+                <div className="border-one grid gap-5 text-[14px] border-gray p-5 h-fit w-full md:w-[25%]">
                   {/* Primary information */}
                   <p className={`border-b-2 w-fit pb-2 ${primaryStyle}`}>
                     PRIMARY INFORMATION

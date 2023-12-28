@@ -2,7 +2,7 @@ import { MdDoNotDisturbOn } from "react-icons/md";
 
 export default function Primary(props) {
   return (
-    <form className="p-5 grid grid-cols-2 gap-5 text-dark text-[14px] border-gray border-one w-[70%] font-mono">
+    <form className="p-5 grid grid-cols-2 gap-5 text-dark text-[14px] border-gray border-one w-full md:w-[70%] font-mono">
       <h1 className="text-xl text-[grey] col-span-2">
         Direct Financial Cost (License Fee)
       </h1>
@@ -20,7 +20,7 @@ export default function Primary(props) {
       </label>
 
       {/* surname */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Surname <br />
         <input
           type="text"
@@ -29,7 +29,7 @@ export default function Primary(props) {
       </label>
 
       {/* first name */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         First Name <br />
         <input
           type="text"
@@ -38,7 +38,7 @@ export default function Primary(props) {
       </label>
 
       {/* middle name */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Middle Name <br />
         <input
           type="text"
@@ -47,7 +47,7 @@ export default function Primary(props) {
       </label>
 
       {/* nationality */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Nationality <br />
         <input
           type="text"
@@ -56,7 +56,7 @@ export default function Primary(props) {
       </label>
 
       {/* phone no 1*/}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Phone No (1) <br />
         <input
           type="number"
@@ -65,7 +65,7 @@ export default function Primary(props) {
       </label>
 
       {/* phone no 2*/}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Phone No (2) <br />
         <input
           type="number"
@@ -74,7 +74,7 @@ export default function Primary(props) {
       </label>
 
       {/* state of origin */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         State of Origin <br />
         <input
           type="text"
@@ -83,7 +83,7 @@ export default function Primary(props) {
       </label>
 
       {/* marital status */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Marital Status
         <select className="bg-transparent border-one border-gray w-full h-8">
           <option>Select Marital status</option>
@@ -95,7 +95,7 @@ export default function Primary(props) {
       </label>
 
       {/* D O B */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         D.O.B <br />
         <input
           type="date"
@@ -104,7 +104,7 @@ export default function Primary(props) {
       </label>
 
       {/* Occupation */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Occupation <br />
         <input
           type="text"
@@ -113,7 +113,7 @@ export default function Primary(props) {
       </label>
 
       {/* Gender */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Gender
         <select className="bg-transparent border-one border-gray w-full h-8">
           <option>Select Gender</option>
@@ -123,7 +123,7 @@ export default function Primary(props) {
       </label>
 
       {/* Email */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Email <br />
         <input
           type="email"
@@ -137,7 +137,7 @@ export default function Primary(props) {
       </h1>
 
       {/* state */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         State
         <select className="bg-transparent border-one border-gray w-full h-8">
           <option>Abia</option>
@@ -147,7 +147,7 @@ export default function Primary(props) {
       </label>
 
       {/* LGA */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         LGA
         <select className="bg-transparent border-one border-gray w-full h-8">
           <option>Aba South</option>
@@ -157,7 +157,7 @@ export default function Primary(props) {
       </label>
 
       {/* Ward */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Ward <br />
         <input
           type="text"
@@ -166,7 +166,7 @@ export default function Primary(props) {
       </label>
 
       {/* CITY */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         City/Town/Area <br />
         <input
           type="text"
@@ -175,7 +175,7 @@ export default function Primary(props) {
       </label>
 
       {/* Street name */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Street Name <br />
         <input
           type="text"
@@ -184,7 +184,7 @@ export default function Primary(props) {
       </label>
 
       {/* house no. */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         House No. <br />
         <input
           type="text"
@@ -193,7 +193,7 @@ export default function Primary(props) {
       </label>
 
       {/* previous Tax Payer Number */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Previous Tax Payer Number <br />
         <input
           type="text"
@@ -202,7 +202,7 @@ export default function Primary(props) {
       </label>
 
       {/* issuing authority */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Issuing Authority <br />
         <input
           type="text"
@@ -239,7 +239,7 @@ export default function Primary(props) {
       </div>
 
       {/* id number */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         ID Number <br />
         <input
           type="number"
@@ -248,7 +248,7 @@ export default function Primary(props) {
       </label>
 
       {/* issuance date */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Issuance Date <br />
         <input
           type="date"
@@ -257,7 +257,7 @@ export default function Primary(props) {
       </label>
 
       {/*Expiry Date*/}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Expiry Date <br />
         <input
           type="date"
@@ -266,7 +266,7 @@ export default function Primary(props) {
       </label>
 
       {/* Place of Issuance*/}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Place of Issuance
         <br />
         <input
@@ -276,7 +276,7 @@ export default function Primary(props) {
       </label>
 
       {/* ID Issuing Authority */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         ID Issuing Authority <br />
         <input
           type="text"
@@ -290,7 +290,7 @@ export default function Primary(props) {
       </h1>
 
       {/* Last Assessment Date */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Last Assessment Date <br />
         <input
           type="date"
@@ -299,7 +299,7 @@ export default function Primary(props) {
       </label>
 
       {/* Last Assessment Amount */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Last Assessment Amount <br />
         <input
           type="number"
@@ -308,7 +308,7 @@ export default function Primary(props) {
       </label>
 
       {/* Last Payment Date */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Last Payment Date <br />
         <input
           type="date"
@@ -317,7 +317,7 @@ export default function Primary(props) {
       </label>
 
       {/* Last Payment Amount */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Last Payment Amount <br />
         <input
           type="number"
@@ -326,7 +326,7 @@ export default function Primary(props) {
       </label>
 
       {/* Tax Type */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Tax Type
         <select className="bg-transparent border-one border-gray w-full h-8">
           <option>Select Tax Type</option>
@@ -341,7 +341,7 @@ export default function Primary(props) {
       </h1>
 
       {/* Year one */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Year <br />
         <input
           type="text"
@@ -352,7 +352,7 @@ export default function Primary(props) {
       </label>
 
       {/* income */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Income <br />
         <input
           type="number"
@@ -361,7 +361,7 @@ export default function Primary(props) {
       </label>
 
       {/* Year two */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Year <br />
         <input
           type="text"
@@ -372,7 +372,7 @@ export default function Primary(props) {
       </label>
 
       {/* income */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Income <br />
         <input
           type="number"
@@ -381,7 +381,7 @@ export default function Primary(props) {
       </label>
 
       {/* Year three */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Year <br />
         <input
           type="text"
@@ -392,7 +392,7 @@ export default function Primary(props) {
       </label>
 
       {/* income */}
-      <label className="leading-8">
+      <label className="leading-8 col-span-2 sm:col-span-1">
         Income <br />
         <input
           type="number"
