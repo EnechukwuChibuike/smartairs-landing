@@ -28,7 +28,7 @@ export default function SearchForBin() {
           <Link to="/smartairs-landing" className=" text-black">
             Home
           </Link>
-          <div className="w-[80vw] mt-10 bg-white h-[30vh] flex justify-center items-center">
+          <div className="w-screen sm:w-[90vw] md:w-[80vw] mt-10 bg-white h-[30vh] flex justify-center items-center">
             <form className="grid gap-3">
               <p className="flex items-center space-x-2">
                 <strong className="text-black">
@@ -58,13 +58,13 @@ export default function SearchForBin() {
 
               <div className="border-gray border-one p-[1px] h-[10vh] w-fit">
                 <input
-                  className="bg-[#F4F4F4] h-full w-[35vw] pl-2 outline-none"
+                  className="bg-[#F4F4F4] h-full w-[65vw] sm:w-[60vw] md:w-[35vw] pl-2 outline-none"
                   type="text"
                   placeholder="Enter BIN"
                   required
                 />
                 <button
-                  className="rounded-none bg-[#e2ad33] h-full w-32 text-black font-[900] border-none"
+                  className="rounded-none bg-[#e2ad33] h-full w-[25vw] md:w-32 text-black font-[900] border-none"
                   onClick={handleClick}
                 >
                   Enter
