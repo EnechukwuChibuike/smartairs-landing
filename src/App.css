@@ -21,7 +21,21 @@
   background-color: transparent !important;
 }
 
-.radio:checked {
+.radioTin {
+  appearance: none !important;
+  border: 2px solid gray !important;
+  width: 13px !important;
+  height: 13px !important;
+  border-radius: 50%;
+}
+
+.radio:checked,
+.radioTin:checked {
   background-color: blue !important;
   border: 2px solid blue !important;
+}
+
+.tinNav.actice {
+  border-bottom: 2px solid #106e63;
+  color: black;
 }

@@ -15,10 +15,10 @@ export default function Header() {
         <NavLink to="/smartairs-landing/generateinvoice">
           Generate Invoice
         </NavLink>
-        <NavLink to="/smartairs-landing/validateinvoice">
-          Validate Invoice
+        <NavLink to="/smartairs-landing/validatereceipt">
+          Validate Receipt
         </NavLink>
-        <NavLink to="/smartairs-landing/generatetin">Generate TIN</NavLink>
+        <NavLink to="/smartairs-landing/registertin">Generate TIN</NavLink>
       </nav>
     </header>
   );

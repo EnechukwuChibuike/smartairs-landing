@@ -1,14 +1,13 @@
 import "./App.css";
-import { useRef } from "react";
 import { createContext, useState } from "react";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
 import SearchForBin from "./pages/SearchForBin";
 import GenerateInvoice from "./pages/GenerateInvoice";
-import ValidateInvoice from "./pages/ValidateInvoice";
-import GenerateTin from "./pages/GenerateTin";
+import ValidateReceipt from "./pages/ValidateReceipt";
 import MakePayment from "./pages/MakePayment";
 import ConfirmInvoice from "./pages/ConfirmInvoice";
+import RegisterTin from "./pages/RegisterTin";
 
 export const FormContext = createContext();
 
@@ -41,9 +40,10 @@ function App() {
           <Route path="/smartairs-landing" element={<Main />}>
             <Route index element={<SearchForBin />} />
             <Route path="generateinvoice" element={<GenerateInvoice />} />
-            <Route path="validateinvoice" element={<ValidateInvoice />} />
-            <Route path="generatetin" element={<GenerateTin />} />
+            <Route path="validatereceipt" element={<ValidateReceipt />} />
             <Route path="makepayment" element={<MakePayment />} />
+            <Route path="registertin" element={<RegisterTin />} />
+
             <Route
               path="confirminvoice"
               element={
