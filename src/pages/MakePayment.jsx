@@ -29,8 +29,8 @@ export default function MakePayment() {
             <span className="text-primaryBg">Make Payment</span>
           </div>
 
-          <div className="w-[80vw] mt-10 py-5 bg-white h-fit flex justify-center items-center">
-            <div className="grid gap-5 w-[70vw]">
+          <div className="w-screen sm:w-[90vw] md:w-[80vw] mt-10 py-5 bg-white h-fit flex justify-center items-center">
+            <div className="grid gap-5 w-[90%] md:w-[70vw]">
               <div className="flex justify-between border-b-2 pb-2 border-gray">
                 <strong className="text-dark">BIN:1002545660</strong>
                 <span className="text-[red]">
@@ -39,53 +39,53 @@ export default function MakePayment() {
               </div>
 
               {/* Name, Invoice Amount Due, Payer ID, etc.... */}
-              <div className="w-[65vw] mx-auto">
+              <div className="w-[90%] md:w-[65vw] mx-auto">
                 <div className="flex justify-between flex-wrap gap-5">
-                  <div className="w-[23%]">
+                  <div className="w-[80%] sm:w-[40%] md:w-[23%]">
                     <p className="text-[gray]">Name</p>
                     <strong className="text-dark">{name}</strong>
                   </div>
 
-                  <div className="w-[23%]">
+                  <div className="w-[80%] sm:w-[40%] md:w-[23%]">
                     <p className="text-[gray]">Invoice Amount Due</p>
                     <strong className="text-dark">{amount}</strong>
                   </div>
 
-                  <div className="w-[23%]">
+                  <div className="w-[80%] sm:w-[40%] md:w-[23%]">
                     <p className="text-[gray]">Payer ID</p>
                     <strong className="text-dark">{id}</strong>
                   </div>
 
-                  <div className="w-[23%]">
+                  <div className="w-[80%] sm:w-[40%] md:w-[23%]">
                     <p className="text-[gray]">MDA</p>
                     <strong className="text-dark">
                       MINISTRY OF WORKS, HOUSING & TRANSPORT
                     </strong>
                   </div>
 
-                  <div className="w-[23%]">
+                  <div className="w-[80%] sm:w-[40%] md:w-[23%]">
                     <p className="text-[gray]">Revenue Head</p>
                     <strong className="text-dark w-1/5 text-wrap">
                       _FIRE_SERVICE_CHARGES_
                     </strong>
                   </div>
 
-                  <div className="w-[23%]">
+                  <div className="w-[80%] sm:w-[40%] md:w-[23%]">
                     <p className="text-[gray]">External Ref. Number</p>
                     <strong className="text-dark"></strong>
                   </div>
 
-                  <div className="w-[23%]">
+                  <div className="w-[80%] sm:w-[40%] md:w-[23%]">
                     <p className="text-[gray]">TIN</p>
                     <strong className="text-dark">{tin}</strong>
                   </div>
 
-                  <div className="w-[23%]"></div>
+                  <div className="w-[80%] sm:w-[40%] md:w-[23%]"></div>
                 </div>
 
                 {/* Amount to Pay */}
 
-                <div className="float-end mt-10 w-[46%] pt-3 border-t-one border-gray">
+                <div className="sm:float-end mt-10 w-[46%] pt-3 border-t-one border-gray">
                   <p className="text-dark">Amount to pay &#8358;</p>
                   <div className="p-3 my-2 text-2xl font-extrabold text-dark border-one border-gray bg-slate-50 rounded-md">
                     200.00
@@ -111,10 +111,10 @@ export default function MakePayment() {
                 <span className="text-white">Bank Transfer</span>
               </div>
 
-              <div className="border-one border-[gray] rounded-md h-fit p-16">
+              <div className="border-one border-[gray] rounded-md h-fit p-5 md:p-16">
                 {/* FOllow for more steps */}
                 <div className="flex justify-center pb-5 w-full border-b-one border-gray">
-                  <p className="text-xl w-[60%] font-extrabold text-dark">
+                  <p className="text-xl w-full md:w-[60%] font-extrabold text-dark">
                     Follow the steps below to make payments on your bank’s
                     mobile banking platform;
                   </p>
@@ -122,12 +122,15 @@ export default function MakePayment() {
 
                 {/* step one */}
 
-                <div className="flex items-center mt-7 space-x-3">
-                  <strong className="text-xl text-dark">STEP</strong>
-                  <div className="text-primaryBg flex justify-center items-center border-one border-primaryBg w-10 h-10 rounded-full">
-                    1
+                <div className="flex flex-col sm:flex-row md:items-center mt-7 sm:space-x-3">
+                  <div className="sm-hidden flex items-center gap-2">
+                    <strong className="text-xl text-dark">STEP</strong>
+                    <div className="text-primaryBg flex justify-center items-center border-one border-primaryBg w-10 h-10 rounded-full">
+                      1
+                    </div>
                   </div>
-                  <span className="font-mono text-dark">
+
+                  <span className="font-mono text-dark leading-10">
                     Login to your <strong>bank mobile application</strong> and
                     select{" "}
                     <strong className="border-dark border-one p-3 rounded-md">
@@ -138,10 +141,12 @@ export default function MakePayment() {
 
                 {/* step two */}
 
-                <div className="flex items-center mt-7 space-x-3">
-                  <strong className="text-xl text-dark">STEP</strong>
-                  <div className="text-primaryBg flex justify-center items-center border-one border-primaryBg w-20 h-10 rounded-full">
-                    2
+                <div className="flex flex-col sm:flex-row md:items-center mt-7 sm:space-x-3">
+                  <div className="sm-hidden flex items-center gap-2 mb-3">
+                    <strong className="text-xl text-dark">STEP</strong>
+                    <div className="text-primaryBg flex justify-center items-center border-one border-primaryBg w-10 h-10 rounded-full">
+                      2
+                    </div>
                   </div>
                   <span className="font-mono text-dark leading-10">
                     Select{" "}
@@ -156,11 +161,14 @@ export default function MakePayment() {
 
                 {/* step three */}
 
-                <div className="flex items-center mt-7 space-x-3">
-                  <strong className="text-xl text-dark">STEP</strong>
-                  <div className="text-primaryBg flex justify-center items-center border-one border-primaryBg w-12 h-10 rounded-full">
-                    3
+                <div className="flex flex-col sm:flex-row md:items-center mt-7 sm:space-x-3">
+                  <div className="sm-hidden flex items-center gap-2 mb-3">
+                    <strong className="text-xl text-dark">STEP</strong>
+                    <div className="text-primaryBg flex justify-center items-center border-one border-primaryBg w-10 h-10 rounded-full">
+                      3
+                    </div>
                   </div>
+
                   <span className="font-mono text-dark leading-10">
                     Enter the exact amount to pay in the{" "}
                     <strong className="border-dark border-one p-3 rounded-md">
